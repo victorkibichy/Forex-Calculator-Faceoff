@@ -22,13 +22,13 @@ struct LoginView: View {
                 
                 TextField("Username", text: $username)
                     .padding()
-                    .background(Color.white.opacity(0.2)) // Adjust background color for contrast
+                    .background(Color.white.opacity(0.7)) // Adjust background color for contrast
                     .cornerRadius(8)
                     .padding(.horizontal)
                 
                 SecureField("Password", text: $password)
                     .padding()
-                    .background(Color.white.opacity(0.2)) // Adjust background color for contrast
+                    .background(Color.white.opacity(0.7)) // Adjust background color for contrast
                     .cornerRadius(8)
                     .padding(.horizontal)
                 
