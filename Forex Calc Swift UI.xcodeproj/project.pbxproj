@@ -11,6 +11,12 @@
 		057B7B312BF606780004B442 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B7B302BF606780004B442 /* ContentView.swift */; };
 		057B7B332BF606790004B442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057B7B322BF606790004B442 /* Assets.xcassets */; };
 		057B7B362BF606790004B442 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057B7B352BF606790004B442 /* Preview Assets.xcassets */; };
+		057B7B3D2BF6099B0004B442 /* ConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B7B3C2BF6099B0004B442 /* ConversionView.swift */; };
+		057B7B3F2BF60EF70004B442 /* Splashscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B7B3E2BF60EF70004B442 /* Splashscreen.swift */; };
+		057B7B412BF60F570004B442 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B7B402BF60F570004B442 /* LoginView.swift */; };
+		057B7B432BF60FC00004B442 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B7B422BF60FC00004B442 /* SignUpView.swift */; };
+		057B7B452BF60FFD0004B442 /* ResetPasswordPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B7B442BF60FFD0004B442 /* ResetPasswordPage.swift */; };
+		057B7B472BF610380004B442 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B7B462BF610380004B442 /* DashboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		057B7B302BF606780004B442 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		057B7B322BF606790004B442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		057B7B352BF606790004B442 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		057B7B3C2BF6099B0004B442 /* ConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionView.swift; sourceTree = "<group>"; };
+		057B7B3E2BF60EF70004B442 /* Splashscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splashscreen.swift; sourceTree = "<group>"; };
+		057B7B402BF60F570004B442 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		057B7B422BF60FC00004B442 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		057B7B442BF60FFD0004B442 /* ResetPasswordPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordPage.swift; sourceTree = "<group>"; };
+		057B7B462BF610380004B442 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				057B7B2E2BF606780004B442 /* Forex_Calc_Swift_UIApp.swift */,
 				057B7B302BF606780004B442 /* ContentView.swift */,
+				057B7B3C2BF6099B0004B442 /* ConversionView.swift */,
+				057B7B3E2BF60EF70004B442 /* Splashscreen.swift */,
+				057B7B402BF60F570004B442 /* LoginView.swift */,
+				057B7B422BF60FC00004B442 /* SignUpView.swift */,
+				057B7B442BF60FFD0004B442 /* ResetPasswordPage.swift */,
+				057B7B462BF610380004B442 /* DashboardView.swift */,
 				057B7B322BF606790004B442 /* Assets.xcassets */,
 				057B7B342BF606790004B442 /* Preview Content */,
 			);
@@ -137,7 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				057B7B3F2BF60EF70004B442 /* Splashscreen.swift in Sources */,
+				057B7B472BF610380004B442 /* DashboardView.swift in Sources */,
+				057B7B3D2BF6099B0004B442 /* ConversionView.swift in Sources */,
 				057B7B312BF606780004B442 /* ContentView.swift in Sources */,
+				057B7B412BF60F570004B442 /* LoginView.swift in Sources */,
+				057B7B452BF60FFD0004B442 /* ResetPasswordPage.swift in Sources */,
+				057B7B432BF60FC00004B442 /* SignUpView.swift in Sources */,
 				057B7B2F2BF606780004B442 /* Forex_Calc_Swift_UIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
