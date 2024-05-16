@@ -26,7 +26,7 @@ struct DashboardView: View {
     }
     
     let cardTitles = ["My Wallet", "Quick Convert", "Currency Charts", "Currency History"]
-    let imageNames = ["mywallet", "quickconvert", "currencycharts", "currencyhistory"]
+    let imageNames = ["mywallet", "convert", "currencychart", "currencyhistory"]
 }
 
 struct CardView: View {

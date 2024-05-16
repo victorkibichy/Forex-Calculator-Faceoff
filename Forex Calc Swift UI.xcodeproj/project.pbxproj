@@ -17,6 +17,7 @@
 		057B7B432BF60FC00004B442 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B7B422BF60FC00004B442 /* SignUpView.swift */; };
 		057B7B452BF60FFD0004B442 /* ResetPasswordPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B7B442BF60FFD0004B442 /* ResetPasswordPage.swift */; };
 		057B7B472BF610380004B442 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B7B462BF610380004B442 /* DashboardView.swift */; };
+		057B7B492BF628D60004B442 /* MyWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B7B482BF628D60004B442 /* MyWalletView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		057B7B422BF60FC00004B442 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		057B7B442BF60FFD0004B442 /* ResetPasswordPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordPage.swift; sourceTree = "<group>"; };
 		057B7B462BF610380004B442 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		057B7B482BF628D60004B442 /* MyWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWalletView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				057B7B422BF60FC00004B442 /* SignUpView.swift */,
 				057B7B442BF60FFD0004B442 /* ResetPasswordPage.swift */,
 				057B7B462BF610380004B442 /* DashboardView.swift */,
+				057B7B482BF628D60004B442 /* MyWalletView.swift */,
 				057B7B322BF606790004B442 /* Assets.xcassets */,
 				057B7B342BF606790004B442 /* Preview Content */,
 			);
@@ -157,6 +160,7 @@
 			files = (
 				057B7B3F2BF60EF70004B442 /* Splashscreen.swift in Sources */,
 				057B7B472BF610380004B442 /* DashboardView.swift in Sources */,
+				057B7B492BF628D60004B442 /* MyWalletView.swift in Sources */,
 				057B7B3D2BF6099B0004B442 /* ConversionView.swift in Sources */,
 				057B7B312BF606780004B442 /* ContentView.swift in Sources */,
 				057B7B412BF60F570004B442 /* LoginView.swift in Sources */,
