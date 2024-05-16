@@ -8,8 +8,6 @@ struct SignUpView: View {
     @State private var phoneNumber: String = ""
     @State private var password: String = ""
     @State private var confirmPassword: String = ""
-    @State private var selectedRoleIndex = 0
-    let roles = ["Farmer", "Agrodealer", "Buyer", "Service Provider", "Transporter"]
     
     var body: some View {
         VStack {
@@ -61,14 +59,6 @@ struct SignUpView: View {
                 .cornerRadius(8)
                 .padding(.horizontal)
             
-            Picker(selection: $selectedRoleIndex, label: Text("Select Role")) {
-                ForEach(0..<roles.count) { index in
-                    Text(roles[index]).tag(index)
-                }
-            }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
-            
             Button(action: {
                 // Handle sign up button action
                 // Here you can perform validation and send email confirmation
@@ -82,7 +72,6 @@ struct SignUpView: View {
                 print("Phone Number: \(phoneNumber)")
                 print("Password: \(password)")
                 print("Confirm Password: \(confirmPassword)")
-                print("Selected Role: \(roles[selectedRoleIndex])")
             }) {
                 Text("Sign Up")
                     .font(.headline)

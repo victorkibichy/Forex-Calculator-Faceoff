@@ -48,12 +48,13 @@ struct QuickConvertView: View {
             }
             .navigationBarTitle("Forex Converter")
         }
+        .background(Color.teal.edgesIgnoringSafeArea(.all)) // Set the background color to teal
     }
 
     func convert() {
         // Mock conversion logic for demonstration purposes
         let amountInDouble = Double(amount) ?? 0.0
-        let conversionRate = 0.85 // Mock conversion rate
+        let conversionRate = 0.85 // this is a Mock conversion rate I made up before API integrations
         convertedAmount = amountInDouble * conversionRate
     }
 }
