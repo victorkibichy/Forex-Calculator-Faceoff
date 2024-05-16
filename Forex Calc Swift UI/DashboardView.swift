@@ -4,11 +4,11 @@ struct DashboardView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: Array(repeating: GridItem(), count: 3), spacing: 20) {
-                    ForEach(0..<9) { index in
+                LazyVGrid(columns: Array(repeating: GridItem(), count: 2), spacing: 20) { // Adjusted to 2 columns for better layout
+                    ForEach(0..<cardTitles.count, id: \.self) { index in
                         CardView(title: cardTitles[index], imageName: imageNames[index])
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .background(Color("equifarm"))
+                            .background(Color.white.opacity(0.8)) // Adjusted background for cards
                             .cornerRadius(10)
                             .shadow(radius: 5)
                     }
@@ -21,11 +21,12 @@ struct DashboardView: View {
                     DrawerMenuButton()
                 }
             }
+            .background(Color.teal.edgesIgnoringSafeArea(.all)) // Set the background color to teal
         }
     }
     
-    let cardTitles = ["My farm", "Farm inputs", "Produce", "Farm Tech", "Services", "Training", "Transportation", "Insurance", "Support"]
-    let imageNames = ["myfarm", "farminputs", "produce", "farmtech", "services", "training", "transport", "insurance", "support"]
+    let cardTitles = ["My Wallet", "Quick Convert", "Currency Charts", "Currency History"]
+    let imageNames = ["mywallet", "quickconvert", "currencycharts", "currencyhistory"]
 }
 
 struct CardView: View {
@@ -53,7 +54,7 @@ struct DrawerMenuButton: View {
         NavigationLink(destination: DrawerMenuView()) {
             Image(systemName: "line.horizontal.3")
                 .font(.title)
-                .foregroundColor(.black)
+                .foregroundColor(.white) // Adjusted color for better visibility
                 .padding()
         }
     }
@@ -94,8 +95,6 @@ enum MenuItem: String, CaseIterable {
     }
 }
 
-
-
 struct HomeView: View {
     var body: some View {
         Text("Home View")
@@ -113,8 +112,6 @@ struct SettingsView: View {
         Text("Settings View")
     }
 }
-
-
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
