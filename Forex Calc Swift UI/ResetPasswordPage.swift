@@ -7,7 +7,7 @@ struct ResetPasswordPage: View {
     var body: some View {
         VStack {
             
-            Image("splashscreen")
+            Image("forexapp")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .padding()

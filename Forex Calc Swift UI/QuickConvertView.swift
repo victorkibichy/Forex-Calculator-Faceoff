@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ConversionView: View {
+struct QuickConvertView: View {
     @State private var amount = ""
     @State private var fromCurrency = "USD"
     @State private var toCurrency = "EUR"
@@ -58,8 +58,8 @@ struct ConversionView: View {
     }
 }
 
-struct ConversionView_Previews: PreviewProvider {
+struct QuickConvertView_Previews: PreviewProvider {
     static var previews: some View {
-        ConversionView()
+        QuickConvertView()
     }
 }

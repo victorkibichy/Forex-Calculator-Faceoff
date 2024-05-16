@@ -1,10 +1,3 @@
-//
-//  MyWalletView.swift
-//  Forex Calc Swift UI
-//
-//  Created by  Bouncy Baby on 5/16/24.
-//
-
 import SwiftUI
 
 struct MyWalletView: View {
@@ -14,7 +7,7 @@ struct MyWalletView: View {
                 VStack(alignment: .leading) {
                     // Welcome and Transactions Section
                     VStack(alignment: .leading) {
-                        Text("Hello, Jane")
+                        Text("Hello, Kibichy")
                             .font(.title)
                             .fontWeight(.bold)
                             .padding(.top)
@@ -25,7 +18,7 @@ struct MyWalletView: View {
                             .fontWeight(.semibold)
                         
                         HStack {
-                            TransactionCardView(transactionName: "Kate KInzau", transactionType: "Wallet Top-Up")
+                            TransactionCardView(transactionName: "Kate Konza", transactionType: "Wallet Top-Up")
                             Spacer()
                             BalanceCardView(balance: "Ksh.21,000.00")
                         }
@@ -59,8 +52,8 @@ struct MyWalletView: View {
                     
                 }
             }
-            .navigationBarTitle("Dashboard", displayMode: .inline)
             .background(Color.teal)
+            .navigationBarHidden(true)
         }
     }
 }

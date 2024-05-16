@@ -14,6 +14,14 @@ struct DashboardView: View {
                                     .cornerRadius(10)
                                     .shadow(radius: 5)
                             }
+                        } else if cardTitles[index] == "Quick Convert" { // Check if the card is "Quick Convert"
+                            NavigationLink(destination: QuickConvertView()) {
+                                CardView(title: cardTitles[index], imageName: imageNames[index])
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    .background(Color.white.opacity(0.8)) // Adjusted background for cards
+                                    .cornerRadius(10)
+                                    .shadow(radius: 5)
+                            }
                         } else {
                             CardView(title: cardTitles[index], imageName: imageNames[index])
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
