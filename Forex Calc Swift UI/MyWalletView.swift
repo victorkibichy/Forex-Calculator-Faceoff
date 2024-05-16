@@ -25,9 +25,9 @@ struct MyWalletView: View {
                             .fontWeight(.semibold)
                         
                         HStack {
-                            TransactionCardView(transactionName: "Kate Johnson", transactionType: "Wallet Top-Up")
+                            TransactionCardView(transactionName: "Kate KInzau", transactionType: "Wallet Top-Up")
                             Spacer()
-                            BalanceCardView(balance: "N21,000.00")
+                            BalanceCardView(balance: "Ksh.21,000.00")
                         }
                         .padding(.top)
                     }
@@ -80,10 +80,10 @@ struct TopMover: Identifiable {
 }
 
 let stockTrends = [
-    StockTrend(name: "Dangote", value: "N15,000", change: "+2,543.00"),
-    StockTrend(name: "Shell", value: "N10,000", change: "-1,543.00"),
-    StockTrend(name: "Facebook", value: "N20,000", change: "+3,543.00"),
-    StockTrend(name: "Apple", value: "N29,000", change: "-3,543.00")
+    StockTrend(name: "Dangote", value: "Ksh.15,000", change: "+2,543.00"),
+    StockTrend(name: "Shell", value: "Ksh.30,000", change: "-1,543.00"),
+    StockTrend(name: "Facebook", value: "Ksh.20,000", change: "+3,543.00"),
+    StockTrend(name: "Apple", value: "Ksh.29,000", change: "-3,543.00")
 ]
 
 let topMovers = [
