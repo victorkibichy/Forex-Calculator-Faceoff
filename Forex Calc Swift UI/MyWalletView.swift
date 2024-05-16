@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WalletView: View {
+struct MyWalletView: View {
     var body: some View {
         NavigationView {
             ScrollView {
@@ -178,8 +178,8 @@ struct TopMoverView: View {
     }
 }
 
-struct WalletView_Previews: PreviewProvider {
+struct MyWalletView_Previews: PreviewProvider {
     static var previews: some View {
-        WalletView()
+        MyWalletView()
     }
 }

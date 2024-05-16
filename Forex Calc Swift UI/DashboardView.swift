@@ -6,11 +6,21 @@ struct DashboardView: View {
             ScrollView {
                 LazyVGrid(columns: Array(repeating: GridItem(), count: 2), spacing: 20) { // Adjusted to 2 columns for better layout
                     ForEach(0..<cardTitles.count, id: \.self) { index in
-                        CardView(title: cardTitles[index], imageName: imageNames[index])
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .background(Color.white.opacity(0.8)) // Adjusted background for cards
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
+                        if cardTitles[index] == "My Wallet" { // Check if the card is "My Wallet"
+                            NavigationLink(destination: MyWalletView()) {
+                                CardView(title: cardTitles[index], imageName: imageNames[index])
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    .background(Color.white.opacity(0.8)) // Adjusted background for cards
+                                    .cornerRadius(10)
+                                    .shadow(radius: 5)
+                            }
+                        } else {
+                            CardView(title: cardTitles[index], imageName: imageNames[index])
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .background(Color.white.opacity(0.8)) // Adjusted background for cards
+                                .cornerRadius(10)
+                                .shadow(radius: 5)
+                        }
                     }
                 }
                 .padding(20)
@@ -28,6 +38,7 @@ struct DashboardView: View {
     let cardTitles = ["My Wallet", "Quick Convert", "Currency Charts", "Currency History"]
     let imageNames = ["mywallet", "convert", "currencychart", "currencyhistory"]
 }
+
 
 struct CardView: View {
     var title: String
@@ -66,7 +77,11 @@ struct DrawerMenuView: View {
     var body: some View {
         List {
             ForEach(MenuItem.allCases, id: \.self) { item in
-                NavigationLink(destination: item.destinationView, tag: item, selection: $selectedMenuItem) {
+                NavigationLink(
+                    destination: item.destinationView,
+                    tag: item,
+                    selection: $selectedMenuItem
+                ) {
                     Text(item.rawValue)
                 }
             }
@@ -74,6 +89,7 @@ struct DrawerMenuView: View {
         .navigationTitle("Menu")
     }
 }
+
 
 enum MenuItem: String, CaseIterable {
     case home = "Home"
