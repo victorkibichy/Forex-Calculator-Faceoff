@@ -4,28 +4,36 @@ struct DashboardView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: Array(repeating: GridItem(), count: 2), spacing: 20) { // Adjusted to 2 columns for better layout
+                LazyVGrid(columns: Array(repeating: GridItem(), count: 2), spacing: 20) {
                     ForEach(0..<cardTitles.count, id: \.self) { index in
-                        if cardTitles[index] == "My Wallet" { // Check if the card is "My Wallet"
+                        if cardTitles[index] == "My Wallet" {
                             NavigationLink(destination: MyWalletView()) {
                                 CardView(title: cardTitles[index], imageName: imageNames[index])
                                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                    .background(Color.white.opacity(0.8)) // Adjusted background for cards
+                                    .background(Color.white.opacity(0.8))
                                     .cornerRadius(10)
                                     .shadow(radius: 5)
                             }
-                        } else if cardTitles[index] == "Quick Convert" { // Check if the card is "Quick Convert"
+                        } else if cardTitles[index] == "Quick Convert" {
                             NavigationLink(destination: QuickConvertView()) {
                                 CardView(title: cardTitles[index], imageName: imageNames[index])
                                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                    .background(Color.white.opacity(0.8)) // Adjusted background for cards
+                                    .background(Color.white.opacity(0.8))
+                                    .cornerRadius(10)
+                                    .shadow(radius: 5)
+                            }
+                        } else if cardTitles[index] == "Currency Charts" { // New navigation link for Currency Charts
+                            NavigationLink(destination: CurrencyChartsView()) {
+                                CardView(title: cardTitles[index], imageName: imageNames[index])
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    .background(Color.white.opacity(0.8))
                                     .cornerRadius(10)
                                     .shadow(radius: 5)
                             }
                         } else {
                             CardView(title: cardTitles[index], imageName: imageNames[index])
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                .background(Color.white.opacity(0.8)) // Adjusted background for cards
+                                .background(Color.white.opacity(0.8))
                                 .cornerRadius(10)
                                 .shadow(radius: 5)
                         }
@@ -46,7 +54,6 @@ struct DashboardView: View {
     let cardTitles = ["My Wallet", "Quick Convert", "Currency Charts", "Currency History"]
     let imageNames = ["mywallet", "convert", "currencychart", "currencyhistory"]
 }
-
 
 struct CardView: View {
     var title: String
@@ -98,30 +105,32 @@ struct DrawerMenuView: View {
     }
 }
 
-
 enum MenuItem: String, CaseIterable {
-    case home = "Home"
+    case profile = "My Profile"
     case myAccount = "My Account"
     case settings = "Settings"
+    case currencyCharts = "Currency Charts" // New case
     case logout = "Logout"
     
     var destinationView: some View {
         switch self {
-        case .home:
-            return AnyView(HomeView())
+        case .profile:
+            return AnyView(ProfileView())
         case .myAccount:
             return AnyView(MyAccountView())
         case .settings:
             return AnyView(SettingsView())
+        case .currencyCharts:
+            return AnyView(CurrencyChartsView()) // New view
         case .logout:
             return AnyView(LoginView())
         }
     }
 }
 
-struct HomeView: View {
+struct ProfileView: View {
     var body: some View {
-        Text("Home View")
+        Text("Profile View")
     }
 }
 
