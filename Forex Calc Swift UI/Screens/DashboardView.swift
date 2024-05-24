@@ -22,7 +22,7 @@ struct DashboardView: View {
                                     .cornerRadius(10)
                                     .shadow(radius: 5)
                             }
-                        } else if cardTitles[index] == "Currency Charts" { // New navigation link for Currency Charts
+                        } else if cardTitles[index] == "Currency Charts" {
                             NavigationLink(destination: CurrencyChartsView()) {
                                 CardView(title: cardTitles[index], imageName: imageNames[index])
                                     .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -47,7 +47,7 @@ struct DashboardView: View {
                     DrawerMenuButton()
                 }
             }
-            .background(Color.teal.edgesIgnoringSafeArea(.all)) // Set the background color to teal
+            .background(Color.teal.edgesIgnoringSafeArea(.all))
         }
     }
     
@@ -80,7 +80,7 @@ struct DrawerMenuButton: View {
         NavigationLink(destination: DrawerMenuView()) {
             Image(systemName: "line.horizontal.3")
                 .font(.title)
-                .foregroundColor(.white) // Adjusted color for better visibility
+                .foregroundColor(.white)
                 .padding()
         }
     }
@@ -109,7 +109,7 @@ enum MenuItem: String, CaseIterable {
     case profile = "My Profile"
     case myAccount = "My Account"
     case settings = "Settings"
-    case currencyCharts = "Currency Charts" // New case
+    case currencyCharts = "Currency Charts"
     case logout = "Logout"
     
     var destinationView: some View {
@@ -121,7 +121,7 @@ enum MenuItem: String, CaseIterable {
         case .settings:
             return AnyView(SettingsView())
         case .currencyCharts:
-            return AnyView(CurrencyChartsView()) // New view
+            return AnyView(CurrencyChartsView())
         case .logout:
             return AnyView(LoginView())
         }
