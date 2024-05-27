@@ -1,10 +1,3 @@
-//
-//  CurrencyConverterViewModel.swift
-//  Forex Calc Swift UI
-//
-//  Created by  Bouncy Baby on 5/24/24.
-//
-
 import Foundation
 
 struct ExchangeRate {
@@ -12,7 +5,7 @@ struct ExchangeRate {
     let rate: Double
 }
 
-class CurrencyConverterViewModel {
+class CurrencyConverterViewModel: ObservableObject {
     private var baseCurrencyCode: String
     private var exchangeRates: [ExchangeRate]
     
@@ -22,17 +15,21 @@ class CurrencyConverterViewModel {
     }
     
     func convert(amount: Double, fromCurrencyCode: String, toCurrencyCode: String) -> Double? {
-        guard let fromRate = exchangeRates.first(where: { $0.code == fromCurrencyCode }),
-              let toRate = exchangeRates.first(where: { $0.code == toCurrencyCode }) else {
+        guard let fromRate = exchangeRates.first(where: { $0.code == fromCurrencyCode })?.rate,
+              let toRate = exchangeRates.first(where: { $0.code == toCurrencyCode })?.rate else {
             return nil
         }
         
         // Convert amount from 'fromCurrency' to 'baseCurrency' first
-        let amountInBaseCurrency = amount / fromRate.rate
+        let amountInBaseCurrency = amount / fromRate
         
         // Convert amount from 'baseCurrency' to 'toCurrency'
-        let convertedAmount = amountInBaseCurrency * toRate.rate
+        let convertedAmount = amountInBaseCurrency * toRate
         
         return convertedAmount
+    }
+    
+    var allCurrencies: [String] {
+        return exchangeRates.map { $0.code }
     }
 }
