@@ -12,3 +12,5 @@ struct CurrencyData: Codable {
     let date: String
     let rates: [String: Double]
 }
+
+
