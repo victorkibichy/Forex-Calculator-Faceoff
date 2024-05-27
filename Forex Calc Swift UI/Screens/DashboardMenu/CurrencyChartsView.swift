@@ -175,50 +175,66 @@ struct CurrencyChartsView: View {
     var body: some View {
         VStack {
             Text("Currency Charts")
-                .font(.body)
+                .font(.largeTitle)
                 .fontWeight(.bold)
-                .padding()
+                .padding(.top, 20)
             
             // Input fields
-            TextField("Amount", text: $amount)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+            HStack {
+                TextField("Amount", text: $amount)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.decimalPad)
+                    .padding()
+                
+                Button("Convert") {
+                    if let amount = Double(amount) {
+                        convertedAmount = viewModel.convert(amount: amount, fromCurrencyCode: sourceCurrency, toCurrencyCode: targetCurrency)
+                    }
+                }
+                .padding(.trailing, 20)
+            }
             
             // Picker for source currency
-            Picker("Source Currency", selection: $sourceCurrency) {
-                ForEach(viewModel.allCurrencies, id: \.self) { currencyCode in
-                    Text(currencyCode).tag(currencyCode)
+            VStack {
+                Text("Source Currency")
+                    .font(.headline)
+                    .padding(.top, 10)
+                
+                Picker("Source Currency", selection: $sourceCurrency) {
+                    ForEach(viewModel.allCurrencies, id: \.self) { currencyCode in
+                        Text(currencyCode).tag(currencyCode)
+                    }
                 }
+                .pickerStyle(MenuPickerStyle())
+                .padding()
             }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
             
             // Picker for target currency
-            Picker("Target Currency", selection: $targetCurrency) {
-                ForEach(viewModel.allCurrencies, id: \.self) { currencyCode in
-                    Text(currencyCode).tag(currencyCode)
+            VStack {
+                Text("Target Currency")
+                    .font(.headline)
+                    .padding(.top, 10)
+                
+                Picker("Target Currency", selection: $targetCurrency) {
+                    ForEach(viewModel.allCurrencies, id: \.self) { currencyCode in
+                        Text(currencyCode).tag(currencyCode)
+                    }
                 }
+                .pickerStyle(MenuPickerStyle())
+                .padding()
             }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
-            
-            // Button to perform conversion
-            Button("Convert") {
-                if let amount = Double(amount) {
-                    convertedAmount = viewModel.convert(amount: amount, fromCurrencyCode: sourceCurrency, toCurrencyCode: targetCurrency)
-                }
-            }
-            .padding()
             
             // Display converted amount
             if let convertedAmount = convertedAmount {
                 Text("Converted Amount: \(convertedAmount, specifier: "%.2f")")
+                    .font(.title)
                     .foregroundColor(.green)
                     .padding()
             }
             
             Spacer()
         }
+        .padding()
         .navigationTitle("Currency Charts")
     }
 }

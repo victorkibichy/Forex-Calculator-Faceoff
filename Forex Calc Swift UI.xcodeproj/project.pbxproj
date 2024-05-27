@@ -77,7 +77,6 @@
 				05BB78FE2C00BC9700083550 /* Screens */,
 				057B7B322BF606790004B442 /* Assets.xcassets */,
 				057B7B342BF606790004B442 /* Preview Content */,
-				0529FE3D2C0486A600F59EBB /* CurrencyData.swift */,
 			);
 			path = "Forex Calc Swift UI";
 			sourceTree = "<group>";
@@ -132,6 +131,7 @@
 		05BB79082C00D3EE00083550 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0529FE3D2C0486A600F59EBB /* CurrencyData.swift */,
 				05BB79062C00D3A800083550 /* CurrencyConverterViewModel.swift */,
 			);
 			path = ViewModel;
