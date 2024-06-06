@@ -166,29 +166,7 @@ enum MenuItem: String, CaseIterable {
     }
 }
 
-// New Views for Business to Business, Business to Consumers, Business to Business to Consumer
-struct BusinessToBusinessView: View {
-    var body: some View {
-        Text("Business to Business View")
-            .navigationTitle("Business to Business")
-    }
-}
 
-struct BusinessToConsumersView: View {
-    var body: some View {
-        Text("Business to Consumers View")
-            .navigationTitle("Business to Consumers")
-    }
-}
-
-struct BusinessToBusinessToConsumerView: View {
-    var body: some View {
-        Text("Business to Business to Consumer View")
-            .navigationTitle("Business to Business to Consumer")
-    }
-}
-
-// Other Placeholder Views
 struct ProfileView: View {
     var body: some View {
         Text("Profile View")
