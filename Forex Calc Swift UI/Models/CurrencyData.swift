@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CurrencyData: Codable {
+struct CurrencyData: Decodable {
     let base: String
     let date: String
     let rates: [String: Double]

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050255572C11D6AE0004090C /* CurrencyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050255562C11D6AE0004090C /* CurrencyHistoryView.swift */; };
+		050255592C11DA7A0004090C /* CurrencyHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050255582C11DA7A0004090C /* CurrencyHistory.swift */; };
 		0529FE3E2C0486A600F59EBB /* CurrencyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529FE3D2C0486A600F59EBB /* CurrencyData.swift */; };
 		057B7B2F2BF606780004B442 /* Forex_Calc_Swift_UIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B7B2E2BF606780004B442 /* Forex_Calc_Swift_UIApp.swift */; };
 		057B7B332BF606790004B442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057B7B322BF606790004B442 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		050255562C11D6AE0004090C /* CurrencyHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyHistoryView.swift; sourceTree = "<group>"; };
+		050255582C11DA7A0004090C /* CurrencyHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyHistory.swift; sourceTree = "<group>"; };
 		0529FE3D2C0486A600F59EBB /* CurrencyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyData.swift; sourceTree = "<group>"; };
 		057B7B2B2BF606780004B442 /* Forex Calc Swift UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Forex Calc Swift UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		057B7B2E2BF606780004B442 /* Forex_Calc_Swift_UIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forex_Calc_Swift_UIApp.swift; sourceTree = "<group>"; };
@@ -71,7 +75,7 @@
 		057B7B2D2BF606780004B442 /* Forex Calc Swift UI */ = {
 			isa = PBXGroup;
 			children = (
-				05BB79082C00D3EE00083550 /* ViewModel */,
+				05BB79082C00D3EE00083550 /* Models */,
 				05BB79032C00C91600083550 /* Managers */,
 				05BB78FF2C00BEC900083550 /* BaseApp */,
 				05BB78FE2C00BC9700083550 /* Screens */,
@@ -93,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				05BB79002C00BEE700083550 /* DashboardMenu */,
-				057B7B442BF60FFD0004B442 /* ResetPasswordPage.swift */,
 				057B7B402BF60F570004B442 /* LoginView.swift */,
+				057B7B442BF60FFD0004B442 /* ResetPasswordPage.swift */,
 				057B7B3E2BF60EF70004B442 /* Splashscreen.swift */,
 				057B7B422BF60FC00004B442 /* SignUpView.swift */,
 				057B7B462BF610380004B442 /* DashboardView.swift */,
@@ -116,6 +120,7 @@
 				057B7B3C2BF6099B0004B442 /* QuickConvertView.swift */,
 				057B7B482BF628D60004B442 /* MyWalletView.swift */,
 				05BB79012C00C5E500083550 /* CurrencyChartsView.swift */,
+				050255562C11D6AE0004090C /* CurrencyHistoryView.swift */,
 			);
 			path = DashboardMenu;
 			sourceTree = "<group>";
@@ -128,13 +133,14 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		05BB79082C00D3EE00083550 /* ViewModel */ = {
+		05BB79082C00D3EE00083550 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				0529FE3D2C0486A600F59EBB /* CurrencyData.swift */,
 				05BB79062C00D3A800083550 /* CurrencyConverterViewModel.swift */,
+				050255582C11DA7A0004090C /* CurrencyHistory.swift */,
 			);
-			path = ViewModel;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,12 +217,14 @@
 				057B7B472BF610380004B442 /* DashboardView.swift in Sources */,
 				05BB79052C00CB5300083550 /* NetworkManager.swift in Sources */,
 				05BB79022C00C5E500083550 /* CurrencyChartsView.swift in Sources */,
+				050255572C11D6AE0004090C /* CurrencyHistoryView.swift in Sources */,
 				057B7B492BF628D60004B442 /* MyWalletView.swift in Sources */,
 				057B7B3D2BF6099B0004B442 /* QuickConvertView.swift in Sources */,
 				0529FE3E2C0486A600F59EBB /* CurrencyData.swift in Sources */,
 				057B7B412BF60F570004B442 /* LoginView.swift in Sources */,
 				057B7B452BF60FFD0004B442 /* ResetPasswordPage.swift in Sources */,
 				057B7B432BF60FC00004B442 /* SignUpView.swift in Sources */,
+				050255592C11DA7A0004090C /* CurrencyHistory.swift in Sources */,
 				057B7B2F2BF606780004B442 /* Forex_Calc_Swift_UIApp.swift in Sources */,
 				05BB79072C00D3A800083550 /* CurrencyConverterViewModel.swift in Sources */,
 			);

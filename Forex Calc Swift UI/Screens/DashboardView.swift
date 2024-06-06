@@ -22,8 +22,45 @@ struct DashboardView: View {
                                     .cornerRadius(10)
                                     .shadow(radius: 5)
                             }
-                        } else if cardTitles[index] == "Currency Charts" {
+                        }
+                        else if cardTitles[index] == "Currency Charts" {
+                                                    NavigationLink(destination: CurrencyChartsView()) {
+                                                        CardView(title: cardTitles[index], imageName: imageNames[index])
+                                                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                                            .background(Color.white.opacity(0.8))
+                                                            .cornerRadius(10)
+                                                            .shadow(radius: 5)
+                            }
+                        }
+                        
+                        else if cardTitles[index] == "Currency Charts" {
                             NavigationLink(destination: CurrencyChartsView()) {
+                                CardView(title: cardTitles[index], imageName: imageNames[index])
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    .background(Color.white.opacity(0.8))
+                                    .cornerRadius(10)
+                                    .shadow(radius: 5)
+                            }
+                        }
+                        
+                        else if cardTitles[index] == "Business to Business" {
+                            NavigationLink(destination: BusinessToBusinessView()) {
+                                CardView(title: cardTitles[index], imageName: imageNames[index])
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    .background(Color.white.opacity(0.8))
+                                    .cornerRadius(10)
+                                    .shadow(radius: 5)
+                            }
+                        } else if cardTitles[index] == "Business to Consumers" {
+                            NavigationLink(destination: BusinessToConsumersView()) {
+                                CardView(title: cardTitles[index], imageName: imageNames[index])
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    .background(Color.white.opacity(0.8))
+                                    .cornerRadius(10)
+                                    .shadow(radius: 5)
+                            }
+                        } else if cardTitles[index] == "Business to Business to Consumer" {
+                            NavigationLink(destination: BusinessToBusinessToConsumerView()) {
                                 CardView(title: cardTitles[index], imageName: imageNames[index])
                                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                                     .background(Color.white.opacity(0.8))
@@ -51,8 +88,8 @@ struct DashboardView: View {
         }
     }
     
-    let cardTitles = ["My Wallet", "Quick Convert", "Currency Charts", "Currency History"]
-    let imageNames = ["mywallet", "convert", "currencychart", "currencyhistory"]
+    let cardTitles = ["My Wallet", "Quick Convert", "Currency Charts", "Currency History", "Business to Business", "Business to Consumers", "Business to Business to Consumer"]
+    let imageNames = ["mywallet", "convert", "currencychart", "currencyhistory", "business", "consumers", "businessconsumer"]
 }
 
 struct CardView: View {
@@ -80,7 +117,7 @@ struct DrawerMenuButton: View {
         NavigationLink(destination: DrawerMenuView()) {
             Image(systemName: "line.horizontal.3")
                 .font(.title)
-                .foregroundColor(.white)
+                .foregroundColor(.purple)
                 .padding()
         }
     }
@@ -128,6 +165,29 @@ enum MenuItem: String, CaseIterable {
     }
 }
 
+// New Views for Business to Business, Business to Consumers, Business to Business to Consumer
+struct BusinessToBusinessView: View {
+    var body: some View {
+        Text("Business to Business View")
+            .navigationTitle("Business to Business")
+    }
+}
+
+struct BusinessToConsumersView: View {
+    var body: some View {
+        Text("Business to Consumers View")
+            .navigationTitle("Business to Consumers")
+    }
+}
+
+struct BusinessToBusinessToConsumerView: View {
+    var body: some View {
+        Text("Business to Business to Consumer View")
+            .navigationTitle("Business to Business to Consumer")
+    }
+}
+
+// Other Placeholder Views
 struct ProfileView: View {
     var body: some View {
         Text("Profile View")
@@ -145,6 +205,8 @@ struct SettingsView: View {
         Text("Settings View")
     }
 }
+
+
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
