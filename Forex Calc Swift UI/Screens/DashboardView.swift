@@ -33,8 +33,8 @@ struct DashboardView: View {
                             }
                         }
                         
-                        else if cardTitles[index] == "Currency Charts" {
-                            NavigationLink(destination: CurrencyChartsView()) {
+                        else if cardTitles[index] == "Currency History" {
+                            NavigationLink(destination: QuickConvertView()) {
                                 CardView(title: cardTitles[index], imageName: imageNames[index])
                                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                                     .background(Color.white.opacity(0.8))
@@ -98,6 +98,7 @@ struct CardView: View {
     
     var body: some View {
         VStack {
+            
             Image(imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
