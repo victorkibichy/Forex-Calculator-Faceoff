@@ -1,24 +1,32 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
     var userName: String
     var currency: String
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("User Profile")
-                .font(.title)
-                .padding(.bottom, 10)
-            
-            Text("Name: \(userName)")
-                .padding(.bottom, 5)
-            
-            Text("Currency: \(currency)")
-                .padding(.bottom, 20)
-            
-            
+        
+        NavigationStack {
+            VStack(alignment: .leading) {
+                Text("User Profile")
+                    .font(.title)
+                    .padding(.bottom, 10)
+                    .foregroundColor(.white) // Set text color to white
+                
+                Text("Name:  \(userName)")
+                    .padding(.bottom, 5)
+                    .foregroundColor(.black) // Set text color to white
+                
+                Text("Currency: \(currency)")
+                    .padding(.bottom, 20)
+                    .foregroundColor(.black) // Set text color to white
+                
+            }
+            .padding()
         }
-        .padding()
+        .background(Color.teal) // Set background color of the entire screen to teal
+        .edgesIgnoringSafeArea(.all) // Ignore safe area to cover the entire screen
     }
 }
 
