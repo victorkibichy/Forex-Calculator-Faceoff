@@ -26,6 +26,7 @@
 		057BAEA02C1337000092892C /* CurrencyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BAE9F2C1337000092892C /* CurrencyListView.swift */; };
 		057BAEA22C1337470092892C /* CurrencyDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BAEA12C1337470092892C /* CurrencyDataService.swift */; };
 		057BAEA52C1341F30092892C /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BAEA42C1341F30092892C /* LogoutView.swift */; };
+		057BAEA82C1346950092892C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BAEA72C1346950092892C /* ProfileView.swift */; };
 		05BB79022C00C5E500083550 /* CurrencyChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BB79012C00C5E500083550 /* CurrencyChartsView.swift */; };
 		05BB79052C00CB5300083550 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BB79042C00CB5300083550 /* NetworkManager.swift */; };
 		05BB79072C00D3A800083550 /* CurrencyConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BB79062C00D3A800083550 /* CurrencyConverterViewModel.swift */; };
@@ -52,6 +53,7 @@
 		057BAE9F2C1337000092892C /* CurrencyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListView.swift; sourceTree = "<group>"; };
 		057BAEA12C1337470092892C /* CurrencyDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDataService.swift; sourceTree = "<group>"; };
 		057BAEA42C1341F30092892C /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
+		057BAEA72C1346950092892C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		05BB79012C00C5E500083550 /* CurrencyChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyChartsView.swift; sourceTree = "<group>"; };
 		05BB79042C00CB5300083550 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		05BB79062C00D3A800083550 /* CurrencyConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewModel.swift; sourceTree = "<group>"; };
@@ -114,9 +116,18 @@
 			path = Servies;
 			sourceTree = "<group>";
 		};
+		057BAEA62C13466E0092892C /* DrawerMenu */ = {
+			isa = PBXGroup;
+			children = (
+				057BAEA72C1346950092892C /* ProfileView.swift */,
+			);
+			path = DrawerMenu;
+			sourceTree = "<group>";
+		};
 		05BB78FE2C00BC9700083550 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				057BAEA62C13466E0092892C /* DrawerMenu */,
 				05BB79002C00BEE700083550 /* DashboardMenu */,
 				057B7B402BF60F570004B442 /* LoginView.swift */,
 				057B7B442BF60FFD0004B442 /* ResetPasswordPage.swift */,
@@ -258,6 +269,7 @@
 				050255592C11DA7A0004090C /* CurrencyHistory.swift in Sources */,
 				0502555D2C11ECA60004090C /* BusinessToConsumerView.swift in Sources */,
 				057B7B2F2BF606780004B442 /* Forex_Calc_Swift_UIApp.swift in Sources */,
+				057BAEA82C1346950092892C /* ProfileView.swift in Sources */,
 				05BB79072C00D3A800083550 /* CurrencyConverterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
