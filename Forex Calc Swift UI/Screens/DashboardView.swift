@@ -167,7 +167,7 @@ enum MenuItem: String, CaseIterable {
         case .currencyCharts:
             return AnyView(CurrencyChartsView())
         case .logout:
-            return AnyView(LoginView())
+            return AnyView(LogoutView())
         }
     }
 }

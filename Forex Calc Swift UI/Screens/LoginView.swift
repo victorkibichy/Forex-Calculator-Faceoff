@@ -8,7 +8,7 @@ struct LoginView: View {
     @State private var isDashboardScreenPresented = false // State to control the presentation of the DashboardScreen
     
     var body: some View {
-        NavigationView { // Wrap the VStack in a NavigationView
+        NavigationStack { // Wrap the VStack in a NavigationView
             VStack {
                 Image("forexapp")
                     .resizable()
