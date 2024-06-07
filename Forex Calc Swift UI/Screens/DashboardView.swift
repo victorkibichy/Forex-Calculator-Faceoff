@@ -40,7 +40,7 @@ struct DashboardView: View {
                         }
                         
                         else if cardTitles[index] == "Currency History" {
-                            NavigationLink(destination: QuickConvertView()) {
+                            NavigationLink(destination: CurrencyListView()) {
                                 CardView(title: cardTitles[index], imageName: imageNames[index])
                                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                                     .background(Color.white.opacity(0.8))

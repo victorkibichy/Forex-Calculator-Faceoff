@@ -90,9 +90,8 @@
 				05BB78FF2C00BEC900083550 /* BaseApp */,
 				05BB78FE2C00BC9700083550 /* Screens */,
 				057B7B322BF606790004B442 /* Assets.xcassets */,
+				057BAEA32C1339320092892C /* Servies */,
 				057B7B342BF606790004B442 /* Preview Content */,
-				057BAE9F2C1337000092892C /* CurrencyListView.swift */,
-				057BAEA12C1337470092892C /* CurrencyDataService.swift */,
 			);
 			path = "Forex Calc Swift UI";
 			sourceTree = "<group>";
@@ -105,6 +104,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		057BAEA32C1339320092892C /* Servies */ = {
+			isa = PBXGroup;
+			children = (
+				057BAEA12C1337470092892C /* CurrencyDataService.swift */,
+			);
+			path = Servies;
+			sourceTree = "<group>";
+		};
 		05BB78FE2C00BC9700083550 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +120,7 @@
 				057B7B442BF60FFD0004B442 /* ResetPasswordPage.swift */,
 				057B7B3E2BF60EF70004B442 /* Splashscreen.swift */,
 				057B7B422BF60FC00004B442 /* SignUpView.swift */,
+				057BAE9F2C1337000092892C /* CurrencyListView.swift */,
 				057B7B462BF610380004B442 /* DashboardView.swift */,
 			);
 			path = Screens;

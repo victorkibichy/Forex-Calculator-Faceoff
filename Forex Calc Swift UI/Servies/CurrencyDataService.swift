@@ -6,13 +6,12 @@
 //
 
 import Foundation
-import Foundation
 
 class CurrencyDataService {
     let apiKey = "2VbURjjrrKQG5F1hgNc4xm85eogWSFvY"
     
-    func fetchCurrencyData(completion: @escaping (Result<[CurrencyData], Error>) -> Void) {
-        let urlString = "https://api.polygon.io/v1/last/crypto/BTC/USD?apiKey=\(apiKey)"
+    func fetchCurrencyData(completion: @escaping (Result<CurrencyData, Error>) -> Void) {
+        let urlString = "https://api.polygon.io/v2/aggs/ticker/C:EURUSD/prev?apiKey=\(apiKey)"
         
         guard let url = URL(string: urlString) else {
             print("Invalid URL")
@@ -32,7 +31,7 @@ class CurrencyDataService {
             
             do {
                 let responseData = try JSONDecoder().decode(CurrencyData.self, from: data)
-                completion(.success([responseData])) // Wrapping in an array for simplicity
+                completion(.success(responseData))
             } catch {
                 completion(.failure(error))
             }
