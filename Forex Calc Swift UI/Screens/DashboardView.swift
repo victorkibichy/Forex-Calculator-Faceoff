@@ -1,8 +1,14 @@
+//
+//  CurrencyData.swift
+//  Forex Calc Swift UI
+//
+//  Created by  Bouncy Baby on 5/27/24.
+//
 import SwiftUI
 
 struct DashboardView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 LazyVGrid(columns: Array(repeating: GridItem(), count: 2), spacing: 20) {
                     ForEach(0..<cardTitles.count, id: \.self) { index in

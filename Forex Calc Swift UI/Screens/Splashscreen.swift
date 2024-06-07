@@ -1,3 +1,9 @@
+//
+//  CurrencyData.swift
+//  Forex Calc Swift UI
+//
+//  Created by  Bouncy Baby on 5/27/24.
+//
 import SwiftUI
 
 struct Splashscreen: View {

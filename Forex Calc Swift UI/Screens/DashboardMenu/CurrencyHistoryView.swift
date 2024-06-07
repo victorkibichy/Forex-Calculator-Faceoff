@@ -2,24 +2,26 @@ import SwiftUI
 
 
 
-
 struct CurrencyHistoryView: View {
     @Binding var conversionHistory: [ConversionHistory]
     
     var body: some View {
-        List(conversionHistory.suffix(5).reversed()) { history in
-            VStack(alignment: .leading) {
-                Text("\(history.amount) \(history.fromCurrency) to \(history.toCurrency)")
-                    .font(.headline)
-                Text("Result: \(history.result)")
-                    .font(.subheadline)
-                Text("Date: \(history.date, style: .date) \(history.date, style: .time)")
-                    .font(.footnote)
-                    .foregroundColor(.gray)
+        
+        NavigationView {
+            List(conversionHistory.suffix(5).reversed()) { history in
+                VStack(alignment: .leading) {
+                    Text("\(history.amount) \(history.fromCurrency) to \(history.toCurrency)")
+                        .font(.headline)
+                    Text("Result: \(history.result)")
+                        .font(.subheadline)
+                    Text("Date: \(history.date, style: .date) \(history.date, style: .time)")
+                        .font(.footnote)
+                        .foregroundColor(.gray)
+                }
+                .padding(.vertical, 5)
             }
-            .padding(.vertical, 5)
+            .navigationTitle("Recent Conversions")
         }
-        .navigationTitle("Recent Conversions")
     }
 }
 

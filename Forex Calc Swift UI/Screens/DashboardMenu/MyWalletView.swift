@@ -1,3 +1,9 @@
+//
+//  Forex_Calc_Swift_UIApp.swift
+//  Forex Calc Swift UI
+//
+//  Created by  Bouncy Baby on 5/16/24.
+//
 import SwiftUI
 
 struct MyWalletView: View {

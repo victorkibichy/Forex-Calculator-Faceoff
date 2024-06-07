@@ -7,10 +7,14 @@
 
 import Foundation
 
-struct CurrencyData: Decodable {
-    let base: String
-    let date: String
-    let rates: [String: Double]
+struct CurrencyData: Codable {
+    let ticker: String
+    let lastTradePrice: Double
+    let lastTradeTimestamp: Int64
+    
+    enum CodingKeys: String, CodingKey {
+        case ticker = "T"
+        case lastTradePrice = "p"
+        case lastTradeTimestamp = "t"
+    }
 }
-
-
