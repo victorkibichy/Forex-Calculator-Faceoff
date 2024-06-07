@@ -39,7 +39,7 @@ struct DashboardView: View {
                             }
                         }
                         
-                        else if cardTitles[index] == "Currency History" {
+                        else if cardTitles[index] == "Currency List" {
                             NavigationLink(destination: CurrencyListView()) {
                                 CardView(title: cardTitles[index], imageName: imageNames[index])
                                     .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -94,8 +94,8 @@ struct DashboardView: View {
         }
     }
     
-    let cardTitles = ["My Wallet", "Quick Convert", "Currency Charts", "Currency History", "Business to Business", "Business to Consumers", "Business to Business to Consumer"]
-    let imageNames = ["mywallet", "convert", "currencychart", "currencyhistory", "business", "consumers", "businessconsumer"]
+    let cardTitles = ["My Wallet", "Quick Convert", "Currency Charts", "Currency List", "Business to Business", "Business to Consumers", "Business to Business to Consumer"]
+    let imageNames = ["mywallet", "convert", "currencychart", "currencylist", "business", "consumers", "businessconsumer"]
 }
 
 struct CardView: View {
