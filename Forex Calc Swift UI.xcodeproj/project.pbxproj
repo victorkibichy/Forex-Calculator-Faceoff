@@ -15,6 +15,7 @@
 		0529FE3E2C0486A600F59EBB /* CurrencyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529FE3D2C0486A600F59EBB /* CurrencyData.swift */; };
 		052AF6322C16D02E00682642 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052AF6312C16D02E00682642 /* UserProfile.swift */; };
 		052AF6342C16EE1E00682642 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052AF6332C16EE1E00682642 /* LoadingView.swift */; };
+		052AF6362C16F7D300682642 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052AF6352C16F7D300682642 /* MyAccountView.swift */; };
 		057B7B2F2BF606780004B442 /* Forex_Calc_Swift_UIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B7B2E2BF606780004B442 /* Forex_Calc_Swift_UIApp.swift */; };
 		057B7B332BF606790004B442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057B7B322BF606790004B442 /* Assets.xcassets */; };
 		057B7B362BF606790004B442 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057B7B352BF606790004B442 /* Preview Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		0529FE3D2C0486A600F59EBB /* CurrencyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyData.swift; sourceTree = "<group>"; };
 		052AF6312C16D02E00682642 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		052AF6332C16EE1E00682642 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		052AF6352C16F7D300682642 /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
 		057B7B2B2BF606780004B442 /* Forex Calc Swift UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Forex Calc Swift UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		057B7B2E2BF606780004B442 /* Forex_Calc_Swift_UIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forex_Calc_Swift_UIApp.swift; sourceTree = "<group>"; };
 		057B7B322BF606790004B442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				057BAEA72C1346950092892C /* ProfileView.swift */,
 				057BAEA92C13513C0092892C /* SettingsView.swift */,
 				057BAEA42C1341F30092892C /* LogoutView.swift */,
+				052AF6352C16F7D300682642 /* MyAccountView.swift */,
 			);
 			path = DrawerMenu;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				057B7B492BF628D60004B442 /* MyWalletView.swift in Sources */,
 				0502555B2C11EC090004090C /* BusinessToBusinessView.swift in Sources */,
 				057B7B3D2BF6099B0004B442 /* QuickConvertView.swift in Sources */,
+				052AF6362C16F7D300682642 /* MyAccountView.swift in Sources */,
 				0529FE3E2C0486A600F59EBB /* CurrencyData.swift in Sources */,
 				057B7B412BF60F570004B442 /* LoginView.swift in Sources */,
 				057BAEA52C1341F30092892C /* LogoutView.swift in Sources */,
