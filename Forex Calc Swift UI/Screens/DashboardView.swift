@@ -169,7 +169,7 @@ struct DrawerMenuButton: View {
         NavigationLink(destination: DrawerMenuView()) {
             Image(systemName: "line.horizontal.3")
                 .font(.title)
-                .foregroundColor(.purple)
+                .foregroundColor(Color("customC1"))
                 .padding()
         }
     }
