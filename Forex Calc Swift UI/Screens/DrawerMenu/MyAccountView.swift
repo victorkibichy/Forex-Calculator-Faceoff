@@ -33,7 +33,7 @@ struct MyAccountView: View {
                 .font(.subheadline)
                 .foregroundColor(.black.opacity(0.9))
             
-            // Action Buttons Grid
+           
             LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 20) {
                 ActionButton(imageName: "person.circle.fill", title: "Profile", color: .white)
                 ActionButton(imageName: "message.circle.fill", title: "Chat", color: .white)
@@ -48,8 +48,8 @@ struct MyAccountView: View {
                     .fill(Color.orange.opacity(0.85))
                     .shadow(radius: 10)
             )
-            .padding(.top, 300)
-            .padding(.horizontal, 20)
+            .padding(.top, 370)
+            .padding(.horizontal, 30)
         }
         .background(Color.teal.edgesIgnoringSafeArea(.all))
     }
