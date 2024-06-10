@@ -15,7 +15,7 @@ struct SignUpView: View {
     @State private var phoneNumber: String = ""
     @State private var password: String = ""
     @State private var confirmPassword: String = ""
-    @State private var selectedCurrency: String = "USD" // Default selection for the currency
+    @State private var selectedCurrency: String = "KES" // Default selection for the currency
 
     // List of currencies sorted alphabetically
     let currencies: [String] = [
@@ -126,6 +126,7 @@ struct SignUpView: View {
                 }) {
                     Text("Sign Up")
                         .font(.headline)
+                        .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding()
                         .frame(maxWidth: .infinity)
@@ -135,7 +136,8 @@ struct SignUpView: View {
                 }
             }
             .padding()
-        }
+            
+        } 
     }
 }
 
