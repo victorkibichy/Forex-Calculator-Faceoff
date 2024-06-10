@@ -1,3 +1,10 @@
+//
+//  MyAccountView.swift
+//  Forex Calc Swift UI
+//
+//  Created by  Bouncy Baby on 6/10/24.
+//
+
 import SwiftUI
 
 struct ProfileView: View {
