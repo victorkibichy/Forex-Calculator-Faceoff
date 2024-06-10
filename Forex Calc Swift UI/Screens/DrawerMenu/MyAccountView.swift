@@ -13,7 +13,7 @@ struct MyAccountView: View {
         VStack {
 //            the following image function fetches an image from url
             
-            AsyncImage(url: URL(string: "https://www.google.com/imgres?imgurl=http%3A%2F%2Fultimateguidetoeverything.com%2Fwp-content%2Fuploads%2F2022%2F07%2F25.jpg&tbnid=wH-0Jst2bgnQJM&vet=10CAoQxiAoAWoXChMIiMj2rODQhgMVAAAAAB0AAAAAEAc..i&imgrefurl=https%3A%2F%2Fultimateguidetoeverything.com%2Fminions-101%2F&docid=IY3Mvp_TvgzN7M&w=500&h=500&itg=1&q=cool%20minions&client=safari&ved=0CAoQxiAoAWoXChMIiMj2rODQhgMVAAAAAB0AAAAAEAc")) { phase in
+            AsyncImage(url: URL(string: "https://pbs.twimg.com/media/EORYblKX0AAJedB?format=jpg&name=medium")) { phase in
                 if let image = phase.image {
                     image
                         .resizable()

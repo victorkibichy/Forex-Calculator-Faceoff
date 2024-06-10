@@ -89,6 +89,7 @@ struct SignUpView: View {
                     .padding(.horizontal)
             }
         }
+        
         .padding()
     }
 }

@@ -91,27 +91,39 @@ struct DashboardView: View {
                 }
             }
             .background(Color.teal.edgesIgnoringSafeArea(.all))
+            .navigationBarBackButtonHidden(true)
             
             
 //            bottom navigatyions for the screen
         
             VStack {
                                     Rectangle()
-                                        .fill(Color.white)
+                                        .fill(Color.teal)
                                         .frame(height: 1) // Adjust height as needed
                                     
-                                    HStack {
-                                        BottomButton(title: "Home", imageName: "house.fill")
-                                            .foregroundColor(.black)
-                                            .font(.system(size: 30))
+                               HStack {
+                                        // Navigation link for Home
+                                        NavigationLink(destination: DashboardView()) {
+                                            BottomButton(title: "Home", imageName: "house.fill")
+                                                .foregroundColor(.black)
+                                                .font(.system(size: 30))
+                                        }
                                         Spacer()
-                                        BottomButton(title: "Bids", imageName: "square.and.pencil")
-                                            .foregroundColor(.black)
-                                            .font(.system(size: 30))
+
+                                        // Navigation link for Bids
+                                        NavigationLink(destination: BidsView()) {
+                                            BottomButton(title: "Bids", imageName: "square.and.pencil")
+                                                .foregroundColor(.black)
+                                                .font(.system(size: 30))
+                                        }
                                         Spacer()
-                                        BottomButton(title: "Profile", imageName: "person.crop.circle.fill")
-                                            .foregroundColor(.black)
-                                            .font(.system(size: 30))
+
+                                        // Navigation link for Profile
+                                        NavigationLink(destination: ProfileView()) {
+                                            BottomButton(title: "Profile", imageName: "person.crop.circle.fill")
+                                                .foregroundColor(.black)
+                                                .font(.system(size: 30))
+                                        }
                                     }
                                     .padding(.bottom, 10)
                                     .padding(.horizontal, 30)
@@ -204,7 +216,7 @@ enum MenuItem: String, CaseIterable {
     var destinationView: some View {
         switch self {
         case .profile:
-            return AnyView(ProfileView(viewModel: ProfileViewModel()))
+            return AnyView(ProfileView())
         case .myAccount:
             return AnyView(MyAccountView())
         case .settings:
