@@ -159,7 +159,7 @@ enum MenuItem: String, CaseIterable {
     var destinationView: some View {
         switch self {
         case .profile:
-            return AnyView(ProfileView(userName: "Kibichy V", currency: "USD"))
+            return AnyView(ProfileView(viewModel: ProfileViewModel()))
         case .myAccount:
             return AnyView(MyWalletView())
         case .settings:
