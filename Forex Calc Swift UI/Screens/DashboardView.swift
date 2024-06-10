@@ -91,11 +91,56 @@ struct DashboardView: View {
                 }
             }
             .background(Color.teal.edgesIgnoringSafeArea(.all))
+            
+            
+//            bottom navigatyions for the screen
+        
+            VStack {
+                                    Rectangle()
+                                        .fill(Color.white)
+                                        .frame(height: 1) // Adjust height as needed
+                                    
+                                    HStack {
+                                        BottomButton(title: "Home", imageName: "house.fill")
+                                            .foregroundColor(.black)
+                                            .font(.system(size: 30))
+                                        Spacer()
+                                        BottomButton(title: "Bids", imageName: "square.and.pencil")
+                                            .foregroundColor(.black)
+                                            .font(.system(size: 30))
+                                        Spacer()
+                                        BottomButton(title: "Profile", imageName: "person.crop.circle.fill")
+                                            .foregroundColor(.black)
+                                            .font(.system(size: 30))
+                                    }
+                                    .padding(.bottom, 10)
+                                    .padding(.horizontal, 30)
+                                }
+                                .background(Color.teal) // Add white background
+                                .opacity(0.9)
+                            }
         }
     }
     
     let cardTitles = ["My Wallet", "Quick Convert", "Currency Charts", "Currency List", "Business to Business", "Business to Consumers", "Business to Business to Consumer"]
     let imageNames = ["mywallet", "convert", "currencychart", "currencylist", "business", "consumers", "businessconsumer"]
+
+
+struct BottomButton: View {
+    let title: String
+    let imageName: String
+
+    var body: some View {
+        VStack {
+            Image(systemName: imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 30, height: 30) // Adjust the size here
+            Text(title)
+                .font(.caption)
+        }
+        .padding(8)
+    }
 }
 
 struct CardView: View {

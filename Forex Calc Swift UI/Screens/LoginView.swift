@@ -8,7 +8,7 @@ struct LoginView: View {
     @State private var isDashboardScreenPresented = false // State to control the presentation of the DashboardScreen
     
     var body: some View {
-        NavigationStack { // Wrap the VStack in a NavigationView
+        NavigationStack {
             VStack {
                 Image("forexapp")
                     .resizable()
@@ -81,9 +81,9 @@ struct LoginView: View {
             .padding()
             .navigationBarHidden(true) // Hide the navigation bar
             .navigationBarTitle("", displayMode: .inline) // Set the navigation title to empty
-            .navigationBarBackButtonHidden(true) // Hide the back button
-            .navigationBarTitleDisplayMode(.inline) // Set the navigation title display mode
-            .background(Color.teal.edgesIgnoringSafeArea(.all)) // Set the background color to teal
+            .navigationBarBackButtonHidden(true)
+            .navigationBarTitleDisplayMode(.inline)
+            .background(Color.teal.edgesIgnoringSafeArea(.all)) 
             .fullScreenCover(isPresented: $isDashboardScreenPresented) {
                 DashboardView()
             }
