@@ -10,12 +10,16 @@ struct ProfileView: View {
                 Text("User Profile")
                     .font(.title)
                     .padding(.bottom, 10)
+                    .foregroundColor(.black)
+                    .fontWeight(.bold)
                 
                 Text("Name: \(viewModel.userProfile.name)")
                     .padding(.bottom, 5)
+                    .foregroundColor(.black)
                 
                 Text("Currency: \(viewModel.userProfile.currency)")
                     .padding(.bottom, 20)
+                    .foregroundColor(.black)
                 
                 // Example button to change user data
                 Button(action: {
@@ -30,11 +34,14 @@ struct ProfileView: View {
                 }
             }
             .padding()
-            .background(Color.teal)
+            
             .foregroundColor(.white)
             .edgesIgnoringSafeArea(.all)
         }
+        
+        
     }
+    
 }
 
 struct ProfileView_Previews: PreviewProvider {
