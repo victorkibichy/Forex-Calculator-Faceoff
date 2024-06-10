@@ -14,6 +14,7 @@
 		0502555F2C11ECC20004090C /* B2B2cView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502555E2C11ECC20004090C /* B2B2cView.swift */; };
 		0529FE3E2C0486A600F59EBB /* CurrencyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529FE3D2C0486A600F59EBB /* CurrencyData.swift */; };
 		052AF6322C16D02E00682642 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052AF6312C16D02E00682642 /* UserProfile.swift */; };
+		052AF6342C16EE1E00682642 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052AF6332C16EE1E00682642 /* LoadingView.swift */; };
 		057B7B2F2BF606780004B442 /* Forex_Calc_Swift_UIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B7B2E2BF606780004B442 /* Forex_Calc_Swift_UIApp.swift */; };
 		057B7B332BF606790004B442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057B7B322BF606790004B442 /* Assets.xcassets */; };
 		057B7B362BF606790004B442 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057B7B352BF606790004B442 /* Preview Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		0502555E2C11ECC20004090C /* B2B2cView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = B2B2cView.swift; sourceTree = "<group>"; };
 		0529FE3D2C0486A600F59EBB /* CurrencyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyData.swift; sourceTree = "<group>"; };
 		052AF6312C16D02E00682642 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		052AF6332C16EE1E00682642 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		057B7B2B2BF606780004B442 /* Forex Calc Swift UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Forex Calc Swift UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		057B7B2E2BF606780004B442 /* Forex_Calc_Swift_UIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forex_Calc_Swift_UIApp.swift; sourceTree = "<group>"; };
 		057B7B322BF606790004B442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				057B7B422BF60FC00004B442 /* SignUpView.swift */,
 				057BAE9F2C1337000092892C /* CurrencyListView.swift */,
 				057B7B462BF610380004B442 /* DashboardView.swift */,
+				052AF6332C16EE1E00682642 /* LoadingView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				057BAEA22C1337470092892C /* CurrencyDataService.swift in Sources */,
 				05BB79052C00CB5300083550 /* NetworkManager.swift in Sources */,
 				05BB79022C00C5E500083550 /* CurrencyChartsView.swift in Sources */,
+				052AF6342C16EE1E00682642 /* LoadingView.swift in Sources */,
 				050255572C11D6AE0004090C /* CurrencyHistoryView.swift in Sources */,
 				052AF6322C16D02E00682642 /* UserProfile.swift in Sources */,
 				0502555F2C11ECC20004090C /* B2B2cView.swift in Sources */,
