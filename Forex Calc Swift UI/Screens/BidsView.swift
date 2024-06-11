@@ -1,3 +1,10 @@
+//
+//  CurrencyData.swift
+//  Forex Calc Swift UI
+//
+//  Created by  Bouncy Baby on 6/11/24.
+//
+
 import Foundation
 import SwiftUI
 

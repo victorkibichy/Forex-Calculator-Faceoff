@@ -134,8 +134,8 @@ struct DashboardView: View {
         }
     }
     
-    let cardTitles = ["My Wallet", "Quick Convert", "Currency Charts", "Currency List", "Business to Business", "Business to Consumers", "Business to Business to Consumer"]
-    let imageNames = ["mywallet", "convert", "currencychart", "currencylist", "business", "consumers", "businessconsumer"]
+    let cardTitles = ["My Wallet", "Quick Convert", "Currency Charts", "Currency List", "Business to Business", "Business to Consumers", "Business to Business to Consumer", "News"]
+    let imageNames = ["mywallet", "convert", "currencychart", "currencylist", "business", "consumers", "businessconsumer", "News"]
 
 
 struct BottomButton: View {
