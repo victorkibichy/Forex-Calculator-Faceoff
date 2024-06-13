@@ -20,7 +20,7 @@ class CurrencyConverterViewModel: ObservableObject {
             return nil
         }
         
-        // Convert amount from 'fromCurrency' to 'baseCurrency' first
+        // this is to Convert amount from 'fromCurrency' to 'baseCurrency' first
         let amountInBaseCurrency = amount / fromRate
         
         // Convert amount from 'baseCurrency' to 'toCurrency'
